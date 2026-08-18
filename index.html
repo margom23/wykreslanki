@@ -1,0 +1,3229 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Orlica znów zachwyca</title>
+
+  <link rel="icon" type="image/png" href="https://media.istockphoto.com/id/1366063664/pl/wektor/turystyka-g%C3%B3rska-wektorowa-linia-projektowania-pojedyncza-izolowana-ikona.jpg?s=612x612&w=0&k=20&c=D9IrQfC36wwJems60Xut7RPqcIK_PSiGQIeu_NK4jus=">
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://polska-org.pl/foto/6471/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_6471367.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+/* przyciemnienie tła */
+.overlay {
+    background: rgba(0,0,0,0.85);
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+/* nagłówek */
+h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 36px;
+}
+
+/* układ przycisków */
+.accordion-container {
+    margin-top: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.row.bottom {
+    justify-content: center;
+    gap: 20px;
+}
+
+/* zakładki */
+.accordion {
+    background-color: #2c3e50;
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 220px;
+    transition: 0.3s;
+}
+.content a {
+  color: #ffd966; /* jasny żółty - dobrze widoczny na ciemnym tle */
+  text-decoration: underline; /* opcjonalnie podkreślenie */
+}
+
+
+
+
+
+
+.content a:hover {
+  color: #fff; /* zmiana koloru po najechaniu */
+}
+/* hover */
+.accordion:hover {
+    background-color: #3d5a73;
+}
+
+/* aktywna zakładka */
+.accordion.active {
+    background-color: #1abc9c;
+}
+
+
+.content {
+    display: none;
+    padding: 20px;
+    margin: 20px auto;
+    width: 70%;
+    background: rgba(30, 32, 34, 0.4);
+    border-radius: 10px;
+    text-align: left; /* 🔥 to naprawia problem */
+}
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <h1>Orlica znów zachwyca</h1>
+<h2>Historia najwyższego szczytu polskiej częsci Gór Orlickich</h2>
+
+
+<div class="author-box">
+    &copy; <a href="mailto:marcel.goman@gmail.com" style="color: inherit; text-decoration: none;">
+  Marcel Goman
+</a>
+</div><br><br>
+<h5>Opracowanie na podst. artukułu M. Tomczaka "Orlica - szczyt zapomniany" [w:] Pielgrzymy '88 Informator Krajoznawczy XXXIII Ogólnopolskiego Rajdu Sudeckiego; Wrocław 1988, ss. 77-89. <br> Uzupełnione przez autora o aktualne fakty i informacje.</h5>
+    <div class="banner"></div>
+
+    <div class="accordion-container">
+
+        <div class="row">
+            <button class="accordion" onclick="openContent('info', this)">Wstęp</button>
+        </div>
+
+        <div class="row bottom">            <button class="accordion" onclick="openContent('long', this)">Orlica</button>
+        </div>
+
+    </div>
+
+    <!-- TREŚCI -->
+
+    <div id="info" class="content">
+        <h2>
+
+
+                <p><h3><p style="text-align: justify;"> Zanim wyruszymy śladami historii Orlicy (niem. Hohe Mense, cz. Vrchmezí) – najwyższego szczytu polskiej części Gór Orlickich – warto najpierw spojrzeć na to miejsce oczami dawnych kartografów. To właśnie stare mapy często kryją w sobie informacje, których nie znajdziemy w późniejszych opracowaniach: dawne nazwy szczytu, przebieg granic, nieistniejące już drogi, zabudowania oraz sposób, w jaki góra była postrzegana przez ludzi żyjących przed nami.
+<br><br>
+W pierwszej części przyjrzymy się więc historycznym mapom, na których pojawia się Orlica, jak wyglądało jej otoczenie przed laty oraz jakie ślady przeszłości można odnaleźć w kartograficznych zapisach.
+<br><br>
+Dopiero po tej podróży przez stare mapy przejdziemy do dziejów samej Orlicy – jej znaczenia jako punktu widokowego, pierwszych prób udostępnienia szczytu turystom, niezwykłej historii Heinricha Rübartscha, dawnych wież i schroniska oraz współczesnego powrotu tradycji widokowej góry. Orlica to bowiem nie tylko wierzchołek o wysokości 1084 m n.p.m., ale miejsce, w którym przez stulecia splatały się historia pogranicza, rozwój turystyki i ludzie, którzy potrafili dostrzec jej wyjątkowy potencjał. <br><br></h3>
+
+
+
+
+
+
+
+
+<!-- Galeria jednozdjęciowa -->
+<div class="gallery" id="gallery-single">
+  <img src="https://raw.githubusercontent.com/margom23/przewodnik/refs/heads/main/zdjecia/Grafschaft_Glatz-1939_3-strony.jpg"
+       onclick="openSingleLightbox(this)"
+       class="thumb-img" alt="Ilustracja">
+</div>
+
+<!-- Lightbox jednozdjęciowy -->
+<div id="single-lightbox-container" class="lightbox-full" onclick="closeSingleLightbox()">
+  <img id="single-lightbox-img" src="">
+</div>
+
+<style>
+/* Miniaturka */
+#gallery-single { display:flex; justify-content:center; margin:20px 0; }
+#gallery-single .thumb-img { width:25%; max-width:200px; cursor:pointer; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2); transition: transform 0.3s; }
+#gallery-single .thumb-img:hover { transform: scale(1.05); }
+
+/* Lightbox jednozdjęciowy */
+#single-lightbox-container {
+  display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+  background:rgba(0,0,0,0.9); z-index:9999; text-align:center;
+}
+#single-lightbox-container img { max-width:90%; max-height:90%; margin-top:5%; border-radius:6px; }
+
+@media(max-width:600px){
+  #gallery-single .thumb-img{ width:45%; max-width:150px; }
+}
+</style>
+
+<script>
+// Funkcje lightbox dla pojedynczego zdjęcia
+function openSingleLightbox(img){
+  document.getElementById('single-lightbox-img').src = img.src;
+  document.getElementById('single-lightbox-container').style.display = 'block';
+}
+function closeSingleLightbox(){
+  document.getElementById('single-lightbox-container').style.display = 'none';
+}
+</script>
+
+
+Poniżej znajduje się zbiór przedwojennych oraz polskich map Orlicy, jej okolic oraz całej Ziemi Kłodzkiej.
+<em>(Pliki z mapami są dość duże, mapy mogą się chwilkę otwierać.)</em>
+</p>
+ 
+<ul>
+  <li>Mapa Zieleńca z Orlicą z 1890 r. – <a href="http://maps.mapywig.org/m/German_maps/series/025K_TK25/5664_Grunwald_1890_BCUWr7231-32299-45400.jpg" target="_blank">Zobacz mapę</a></li> <li>Mapa Zieleńca z Orlicą z 1935 r. – <a href="http://maps.mapywig.org/m/German_maps/series/025K_TK25/5664_(3294)_Grunwald_ca_1935_nnv3Xll_BN_Sygn.ZZK_S-4_351_A.jpg" target="_blank">Zobacz mapę</a></li>
+ 
+  <li>Bardzo ciekawa mapa okolicy z połowy XIX w. – <a href="https://photos.szukajwarchiwach.gov.pl/9e89c17cf877a89cf9226877723ff4df06db201528e1ec48a49a5c29d5409b76_max" target="_blank">Zobacz mapę</a></li><li>Mapa ogólna ziemi kłodzkiej z 1948 r. – <a href="http://maps.mapywig.org/m/Polish_maps/various/Topographic_and_tourist_maps/KOTLINA_KLODZKA_I_GORY_PRZYLEGLE_100K_1948.jpg" target="_blank">Zobacz mapę</a></li>
+  <li>Mapa hrabstwa z lat 20. XX w. – <a href="http://maps.mapywig.org/m/German_maps/various/Topographic_and_tourist_maps/KARTE_der_GRATSCHAFT_GLATZ_125K.jpg" target="_blank">Zobacz mapę</a></li>
+  <li>Mapa Briegera z lat 30. XX w. – <a href="http://maps.mapywig.org/m/German_maps/various/Topographic_and_tourist_maps/Briegers_Wegekarte_der_Graftschaft_Glatz_75K.jpg" target="_blank">Zobacz mapę</a></li>
+  <li>Mapa całego regionu z 1932 r. – <a href="http://maps.mapywig.org/m/German_maps/series/100K_KDR_Kreiskarten/Graftschaft_Glatz_100K_RfL_1932.jpg" target="_blank">Zobacz mapę</a></li>
+  <li>Mapa całego regionu z 1938 r. – <a href="http://maps.mapywig.org/m/German_maps/series/075K_Sudetenland/Sudentelnades_75K_3857_Glatz_1938.jpg" target="_blank">Zobacz mapę</a></li>
+</ul>
+
+<h4>Mapy sztabowe WP:</h4>
+<ul>  <li>Mapa Dusznik i Zieleńca z 1960 r. – <a href="http://maps.mapywig.org/m/Polish_maps/series_PRL/025_SGWP/M-33-57-D-d_(DUSZNIKI_ZDROJ)_1960.jpg" target="_blank">Zobacz mapę</a></li>
+<li>Mapa Orlicy i polsko-czeskiego pogranicza z 1960 r. – <a href="http://maps.mapywig.org/m/Polish_maps/series_PRL/025_SGWP/M-33-57-D-c_(OLESNICE)_1960.jpg" target="_blank">Zobacz mapę</a></li>
+</ul>
+
+<br>
+<strong>
+<a href="https://photos.szukajwarchiwach.gov.pl/6f518f7cfd5bc6d9237ae2338eca2d81a91ba0395a88d85b33686310b5879077_max" target="_blank">Poza mapami zwróć uwagę na przepiękną XIX-wieczną ilustrację w postaci panoramicznego widoku z Orlicy z roku 1885.</a></strong>
+<br>
+
+<br>
+<p>
+Polecam też świetne narzędzie, jakim jest <a href="https://geoportal.gov.cz/web/guest/map" target="_blank">czeska ortofotomapa z roku 1953</a> (poniżej wycinek z tejże przedstawiający szczyt Orlicy z ruinami schroniska). Po otwarciu linku należy kliknąć w menu po prawej 'ortofotomapa (50. leta)', jednocześnie odznaczyć 'topograficke mapy'. 
+</p>
+
+
+
+
+
+<!-- Galeria jednozdjęciowa -->
+<div class="gallery" id="gallery-single">
+  <img src="https://polska-org.pl/foto/5575/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_5575728.jpg"
+       onclick="openSingleLightbox(this)"
+       class="thumb-img" alt="Ilustracja">
+</div>
+
+<!-- Lightbox jednozdjęciowy -->
+<div id="single-lightbox-container" class="lightbox-full" onclick="closeSingleLightbox()">
+  <img id="single-lightbox-img" src="">
+</div>
+
+<style>
+/* Miniaturka */
+#gallery-single { display:flex; justify-content:center; margin:20px 0; }
+#gallery-single .thumb-img { width:25%; max-width:200px; cursor:pointer; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2); transition: transform 0.3s; }
+#gallery-single .thumb-img:hover { transform: scale(1.05); }
+
+/* Lightbox jednozdjęciowy */
+#single-lightbox-container {
+  display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+  background:rgba(0,0,0,0.9); z-index:9999; text-align:center;
+}
+#single-lightbox-container img { max-width:90%; max-height:90%; margin-top:5%; border-radius:6px; }
+
+@media(max-width:600px){
+  #gallery-single .thumb-img{ width:45%; max-width:150px; }
+}
+</style>
+
+<script>
+// Funkcje lightbox dla pojedynczego zdjęcia
+function openSingleLightbox(img){
+  document.getElementById('single-lightbox-img').src = img.src;
+  document.getElementById('single-lightbox-container').style.display = 'block';
+}
+function closeSingleLightbox(){
+  document.getElementById('single-lightbox-container').style.display = 'none';
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="long" class="content">
+
+
+Choć Góry Orlickie nie mogą rywalizować wysokością z najwyższymi pasmami Sudetów, zajmują w nich miejsce wyjątkowe. Rozciągają się w środkowej części łańcucha, pomiędzy Karkonoszami a Masywem Śnieżnika, wyraźnie dominując nad otaczającym krajobrazem. Ich największym atutem jest rozległy, wyrównany grzbiet, który przez wiele kilometrów utrzymuje wysokość przekraczającą 1000 m n.p.m. Dzięki temu od strony czeskiej pasmo prezentuje się niezwykle okazale, tworząc wyrazistą i łatwo rozpoznawalną linię horyzontu.
+<br><br>
+Od strony Kotliny Kłodzkiej Góry Orlickie sprawiają nieco skromniejsze wrażenie. Częściowo przesłaniają je bowiem Góry Bystrzyckie, przez co schodzą na drugi plan. Najlepsze widoki na całe pasmo po polskiej stronie rozciągają się z okolic Gór Stołowych oraz z dna Obniżenia Dusznickiego i Obniżenia Kudowy. Różnica wysokości między kotlinami a grzbietem dochodzi tutaj do około 700 metrów, co nadaje panoramie wyjątkowej głębi i przywodzi na myśl widoki znane z Karkonoszy.
+<br><br>
+Główny grzbiet Gór Orlickich stopniowo wznosi się na południe od Przełęczy Polskie Wrota (660 m n.p.m.), osiągając kulminację w charakterystycznym szczycie Orlicy (1084 m n.p.m.). Dalej wysokość grzbietu pozostaje niemal niezmienna na długim odcinku, tworząc rozległą, łagodną wierzchowinę. Choć Orlica nie jest najwyższym szczytem całego pasma, to właśnie ona dominuje w panoramie oglądanej od północy. Skutecznie zasłania położone za nią wyższe wierzchołki, które z tej perspektywy zlewają się z linią grzbietu.
+<br><br>
+
+
+<div class="gallery-modular" id="gallery1">
+
+  <img src="https://polska-org.pl/foto/5406/Serlich_1025_m_CZ_5406480.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/398/Panoramy_i_widoki_Karlowa_Karlow_398450.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/4722/Widoki_ze_Szczelinca_Wielkiego_Karlow_4722212.jpg" class="thumb-img"><img src="https://polska-org.pl/foto/6799/Skaly_Puchacza_730_m_6799585.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/354/Panoramy_i_widoki_Jaszkowej_Gornej_Jaszkowa_Gorna_354285.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox1">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery1');
+  const lightbox = document.getElementById('lightbox1');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+Historia nazwy Orlicy jest stosunkowo młoda. Współczesna polska nazwa ma przede wszystkim charakter informacyjny i podkreśla, że fragment Gór Orlickich znajduje się w granicach Polski. Znacznie starsza jest czeska nazwa Vrchmezí, pochodząca z XVII wieku. Oznacza ona „szczyt na granicy” i nawiązuje do przebiegającej tędy granicy historycznej. Prawdopodobnie pojawiła się w 1636 roku, kiedy po raz pierwszy dokładnie wytyczono granicę między Hrabstwem Kłodzkim a państwem opoczeńskim. Wcześniej szczyt nosił nazwę Humeničný vrch. 
+<br><br>
+Pamiątką po wytyczeniu granicy z 1636 roku jest kamień graniczny, który pierwotnie wyznaczał styk trzech historycznych dóbr: Hrabstwa Kłodzkiego, państwa opoczeńskiego należącego do rodu Colloredo oraz majątku Černíkovice będącego własnością Kolowratów. Monument ustawiono za panowania cesarza Ferdynanda III Habsburga, o czym przypominają wyryte na jego froncie cesarska korona oraz inicjały F III.
+<br><br><div class="gallery-modular" id="gallery112">
+
+  <img src="https://www.eksploratorzy.com.pl/download/file.php?id=493943&sid=56233634c84f565ce233a9399787a964" class="thumb-img">
+<img src="https://www.eksploratorzy.com.pl/download/file.php?id=493944&sid=56233634c84f565ce233a9399787a964" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox112">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery112');
+  const lightbox = document.getElementById('lightbox112');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+Dokładne miejsce, w którym kamień stał pierwotnie, pozostaje nieznane. Pod koniec XIX wieku odnaleziono go na podmokłych łąkach poniżej dzisiejszej Masarykovej chaty. Następnie został przeniesiony na główny grzbiet Gór Orlickich, w okolice południowo-wschodniego wierzchołka Šerlicha. Po zakończeniu II wojny światowej trafił do ogrodu szkoły w osadzie Šerlich, skąd po latach zniknął w tajemniczych okolicznościach. Odnaleziony przy drodze, prawdopodobnie przygotowany do kradzieży, został zabezpieczony i przewieziony do ogrodu Muzeum Zimowego Sportu, Turystyki i Rzemiosła w Deštném v Orlických horách, gdzie znajduje się do dziś.
+<br><br>
+Aby upamiętnić to wyjątkowe świadectwo historii pogranicza, w 2018 roku ustawiono wierną replikę kamienia na łące przy Masarykovej chacie, zaledwie kilkadziesiąt metrów od granicy polsko-czeskiej. Dziś jest ona nie tylko ciekawostką historyczną, ale także chętnie odwiedzanym punktem na szlakach prowadzących przez najwyższe partie Gór Orlickich.
+<br><br>
+
+
+Niemiecka nazwa szczytu – Hohe Mense – wywodzi się z czeskiego nazewnictwa. W przeszłości funkcjonowały również różne polskie odpowiedniki. W XIX wieku używano nazwy Wysoka Miedza, która dobrze oddawała znaczenie czeskiego Vrchmezí („szczyt na granicy”). Po II wojnie światowej Komisja Nomenklatury Sudetów PTT zaproponowała nazwę Międzywierch, będącą dosłownym tłumaczeniem czeskiego oryginału, jednak nie przyjęła się ona w powszechnym użyciu. Ostatecznie utrwaliła się obecna nazwa Orlica, choć z historycznego punktu widzenia nie nawiązuje ona do dawnego znaczenia szczytu.
+<br><br>
+Już sam fakt, że Orlica posiadała własną nazwę od co najmniej XVII wieku, świadczy o jej szczególnej randze. W tamtych czasach takie wyróżnienie przysługiwało jedynie najwybitniejszym i najlepiej rozpoznawalnym wierzchołkom. Jeszcze na początku XIX wieku uważano ją za drugi, po Śnieżniku, najwyższy szczyt Hrabstwa Kłodzkiego.
+<br><br>
+
+
+
+
+<div class="gallery-modular" id="gallery3">
+
+<img src="https://polska-org.pl/foto/6473/Orlica_1084_m_Duszniki_Zdroj_6473700.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/3197/Granica_polsko_czeska_3197095.jpg" class="thumb-img">
+</div>
+
+<div class="lightbox-modular" id="lightbox3">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery3');
+  const lightbox = document.getElementById('lightbox3');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+Bliskość stale zamieszkanych miejscowości, takich jak Zieleniec i Olešnice v Orlických horách, sprawiła, że już w drugiej połowie XVIII wieku na Orlicę zaczęli docierać pierwsi miłośnicy górskich panoram. Czekało ich jednak niemałe rozczarowanie. Wierzchołek porastał gęsty, wysoki las, który całkowicie zasłaniał widoki. Aby temu zaradzić, na szczycie zbudowano prostą drewnianą platformę z drabiną, nazywaną „sceną”. Pozwalała ona wznieść się ponad korony drzew i podziwiać rozległą panoramę Sudetów oraz ziem po obu stronach granicy.
+<br><br>
+Powstanie tej niezwykłej konstrukcji najprawdopodobniej wiąże się z wizytą cesarza Józefa II w 1779 roku, podczas wojny o sukcesję bawarską, zwanej potocznie „wojną kartoflaną”. Trudno przypuszczać, aby monarcha zdecydował się na wejście na zalesiony szczyt bez możliwości podziwiania widoków. Jego obecność mogła stać się impulsem do przygotowania punktu obserwacyjnego, który przez kolejne lata służył zarówno dostojnym gościom, jak i coraz liczniejszym turystom odwiedzającym najwyższe partie Gór Orlickich.
+<br><br>
+
+Wizyta cesarza Józefa II stała się prawdopodobnie impulsem dla właściciela okolicznych dóbr do podjęcia niemałego wysiłku budowy drewnianej platformy widokowej na zalesionym szczycie. Wzniesienie takiej konstrukcji w trudnym górskim terenie było w XVIII wieku przedsięwzięciem wymagającym zarówno znacznych nakładów pracy, jak i determinacji. Niestety, wystawiona na działanie surowego klimatu „scena” nie przetrwała długo. Pozbawiona stałej opieki szybko uległa zniszczeniu i z czasem całkowicie zniknęła. Przez pewien okres pamięć o niej przetrwała jednak w lokalnym nazewnictwie – nazwę „Scena” odnoszono nawet do samego szczytu.
+<br><br>
+Budowa platformy pozostawiła po sobie jeszcze jeden, znacznie trwalszy ślad. Wszystko wskazuje na to, że właśnie wtedy dokonano niewielkiej korekty przebiegu granicy. W przeciwieństwie do sąsiednich odcinków, gdzie biegnie ona środkiem grzbietu, w rejonie Orlicy granica omija najwyższy punkt od wschodu. W efekcie właściwa kulminacja szczytu znalazła się po stronie czeskiej, co pozostaje charakterystyczną cechą tego miejsca do dziś.
+<br><br>
+Mimo zniknięcia platformy widokowej Orlica nie przestała przyciągać turystów. Już w pierwszej połowie XIX wieku na szczyt regularnie docierali wędrowcy, wśród których znaczną grupę stanowili kuracjusze z pobliskich Dusznik-Zdroju. W tamtych czasach wejście na Orlicę wymagało jednak znacznie większego wysiłku niż obecnie. Nie istniały jeszcze wygodne szlaki, a wyprawy odbywały się zazwyczaj pod opieką miejscowych przewodników, doskonale znających przebieg leśnych dróg i granicznych ścieżek.
+<br><br>
+Na szczycie gościli również znani podróżnicy i wybitne postacie swoich czasów. W 1800 roku Orlicę odwiedził John Quincy Adams, późniejszy szósty prezydent Stanów Zjednoczonych, natomiast w 1826 roku na wierzchołek dotarł młody Fryderyk Chopin, przebywający wówczas na kuracji w Dusznikach-Zdroju. Pamięć o tych wyjątkowych gościach, a także o wspomnianej wyżej wizycie cesarza Józefa II w 1779 roku, zachowano do dziś – na szczycie znajduje się pomnik odsłonięty w 2012 roku, upamiętniający pobyt tych trzech wybitnych postaci na Orlicy.
+Mimo takich wizyt Orlica pozostawała miejscem odwiedzanym stosunkowo rzadko i znajdowała się w cieniu znacznie popularniejszego Szczelińca Wielkiego, który już wtedy należał do największych atrakcji turystycznych Sudetów.
+<br><br>
+
+
+
+
+<div class="gallery-modular" id="gallery4">
+
+<img src="https://polska-org.pl/foto/9803/Pamiatkowy_obelisk_Duszniki_Zdroj_9803191.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/8321/Pamiatkowy_obelisk_Duszniki_Zdroj_8321587.jpg" class="thumb-img">
+</div>
+
+<div class="lightbox-modular" id="lightbox4">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery4');
+  const lightbox = document.getElementById('lightbox4');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+Przełom w dziejach Orlicy przyniosła dopiero działalność jednego człowieka – Heinricha (Henryka) Rübartscha. Trudno znaleźć w historii Sudetów drugą osobę, która z taką wytrwałością i poświęceniem zabiegałaby o rozwój turystyki na jednym szczycie. Dzięki jego determinacji Orlica z mało znanego, leśnego wierzchołka stopniowo zaczęła przekształcać się w jeden z najważniejszych celów wycieczek w Górach Orlickich.
+<br><br>
+Heinrich Rübartsch urodził się w 1852 roku w Niwie (ówczesnym Reichenau), na północ od Polanicy-Zdroju. Wywodził się z protestanckiej rodziny o czeskich korzeniach, której przodkowie po zakończeniu wojny trzydziestoletniej opuścili okolice Strakonic na Szumawie i osiedlili się na ziemi kłodzkiej. Dawne nazwisko Rybář (Rybak) z czasem zostało zgermanizowane do formy Rübartsch, jednak sam Heinrich chętnie podkreślał swoje czeskie pochodzenie. Z zawodu był piwowarem. Po ukończeniu nauki przez kilka lat wędrował po Niemczech, doskonaląc rzemiosło w kolejnych browarach. Ten etap życia przerwała służba wojskowa w Saksonii, po której powrócił w rodzinne strony i rozpoczął nowy rozdział swojej działalności – rozdział, który na trwałe zapisał się w historii Orlicy.
+<br><br>
+
+
+<div class="gallery-modular" id="gallery5">
+
+<img src="https://polska-org.pl/foto/3849/Heinrich_Rubartsch_1852_1930_Duszniki_Zdroj_3849507.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/5811/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_5811022.jpg" class="thumb-img">
+</div>
+
+<div class="lightbox-modular" id="lightbox5">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery5');
+  const lightbox = document.getElementById('lightbox5');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+Pod koniec lat siedemdziesiątych XIX wieku Heinrich Rübartsch przejął po swoim starszym bracie Józefie prowadzenie rodzinnej gospody w Zieleńcu. Była to wówczas niewielka, spokojna osada położona na uboczu głównych szlaków komunikacyjnych. Do gospody tylko sporadycznie zaglądali goście z dalszych stron – przyrodnicy badający unikatowe torfowiska, urzędnicy odbywający służbowe objazdy regionu czy nieliczni turyści szukający ciszy i kontaktu z górską przyrodą.
+<br><br>
+Rübartsch doskonale znał okoliczne góry i chętnie pełnił rolę przewodnika. Pewnego letniego dnia 1880 roku poprowadził swoich gości na Orlicę. Nie mógł wtedy przypuszczać, że ta z pozoru zwyczajna wycieczka całkowicie odmieni jego życie. Od tego momentu przez następne pół wieku niemal całą swoją energię poświęci najwyższemu szczytowi Gór Orlickich, stając się człowiekiem, który w największym stopniu przyczynił się do jego turystycznej sławy.
+<br><br>
+Po dotarciu na wierzchołek okazało się, że gęsty świerkowy las całkowicie zasłania panoramę. Rübartsch nie zamierzał jednak wracać z niczym. Jak zapewne wielu przed nim, wspiął się na najwyższe z rosnących tam drzew. Dopiero z jego wierzchołka ujrzał rozległe morze górskich grzbietów ciągnących się aż po horyzont. Widok ten zrobił na nim ogromne wrażenie i uświadomił mu, że Orlica ma potencjał, którego dotychczas nie potrafiono wykorzystać. To właśnie wtedy narodziła się idea udostępnienia szczytu turystom i stworzenia miejsca, z którego każdy będzie mógł podziwiać jedną z najpiękniejszych panoram Sudetów.
+<br><br>
+
+
+<div class="gallery-modular" id="gallery6">
+
+<img src="https://polska-org.pl/foto/6134/Widoki_z_Orlicy_Duszniki_Zdroj_6134950.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/6134/Widoki_z_Orlicy_Duszniki_Zdroj_6134953.jpg" class="thumb-img">
+
+<img src="https://polska-org.pl/foto/8839/Widoki_z_Orlicy_Duszniki_Zdroj_8839128.jpg" class="thumb-img"></div>
+
+<div class="lightbox-modular" id="lightbox6">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery6');
+  const lightbox = document.getElementById('lightbox6');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+Widok, który Rübartsch ujrzał z wierzchołka drzewa, zrobił na nim tak ogromne wrażenie, że postanowił umożliwić jego podziwianie także innym. Przystosował więc drzewo do bezpiecznego wejścia, odpowiednio formując jego gałęzie tak, aby pełniły funkcję naturalnej drabiny. Gdy pierwsi goście mogli spojrzeć ponad koronami lasu na rozległą panoramę Sudetów, zachwyt był powszechny. Szybko okazało się, że Orlica kryje w sobie ogromny turystyczny potencjał.
+<br><br>
+Dalsze wydarzenia potoczyły się niezwykle szybko. Prawdopodobnie wśród uczestników pamiętnej wycieczki znalazła się osoba związana z powstającym właśnie Kłodzkim Towarzystwem Górskim (<a href="https://pl.wikipedia.org/wiki/K%C5%82odzkie_Towarzystwo_G%C3%B3rskie" target="_blank">Glatzer Gebirgsverein – GGV</a>). Organizacja ta, powstała formalnie w 1881 r., aktywnie działająca na rzecz rozwoju turystyki w regionie, poszukiwała nowych atrakcji, które mogłyby urozmaicić pobyt kuracjuszy odwiedzających Duszniki-Zdrój. Niewykluczone, że sama wyprawa na Orlicę była częścią tych planów.
+<br><br>
+Niezależnie od okoliczności, działacze dusznickiej sekcji GGV zwrócili się do Rübartscha z propozycją wybudowania na szczycie Orlicy stałej wieży widokowej. Koszty przedsięwzięcia miały zostać pokryte przez inicjatorów oraz lokalne władze. Rübartsch z entuzjazmem przystąpił do realizacji zadania, widząc w nim nie tylko możliwość udostępnienia niezwykłego miejsca turystom, ale także szansę na rozwój własnej działalności. Gdy pojawiły się opóźnienia w przekazaniu środków finansowych, zdecydował się nawet zaangażować własne oszczędności.
+<br><br>
+
+
+<div class="gallery-modular" id="gallery7">
+
+  <img src="https://polska-org.pl/foto/3404/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_3404065.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/9078/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_9078588.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/351/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_351435.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/357/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_357562.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/5513/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_5513187.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/265/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_265094.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/12069/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_12069280.jpg" class="thumb-img">
+</div>
+
+<div class="lightbox-modular" id="lightbox7">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery7');
+  const lightbox = document.getElementById('lightbox7');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+
+Dzięki jego determinacji jeszcze w tym samym 1880 roku na szczycie Orlicy stanęła pierwsza drewniana wieża widokowa. Miała 16 metrów wysokości, cztery kondygnacje i 74 stopnie prowadzące na górną platformę. Była to pierwsza wieża widokowa w Sudetach wzniesiona z inicjatywy organizacji turystycznej oraz jedna z pierwszych dużych inwestycji Kłodzkiego Towarzystwa Górskiego, które w kolejnych latach odegrało ogromną rolę w rozwoju turystyki w regionie.
+<br><br>
+Panorama z wieży rzeczywiście zachwycała. Obejmowała niemal całą Ziemię Kłodzką, rozległe fragmenty Śląska i Czech oraz wszystkie najważniejsze pasma Sudetów pomiędzy Karkonoszami a Górami Złotymi. Przy dobrej pogodzie wzrok sięgał nawet ku odległym Rudawom po czeskiej stronie. Aby ułatwić turystom dotarcie do nowej atrakcji, wytyczono wygodną ścieżkę prowadzącą na sam wierzchołek. Nadzór nad jej budową sprawował nadleśniczy Tschirschky. Równocześnie przygotowano dogodną drogę dla powozów łączącą Duszniki-Zdrój z Zieleńcem, dzięki czemu wyprawa na Orlicę stała się znacznie łatwiejsza.
+<br><br>
+Rozwój turystyki na szczycie wymagał jednak nie tylko punktu widokowego, ale również miejsca, w którym można było odpocząć i schronić się przed zmienną górską pogodą. W 1883 roku Rübartsch wzniósł więc obok wieży niewielki drewniany schron, nazwany Schutzhütte. Zrezygnowano z umieszczenia pomieszczeń w dolnej kondygnacji wieży, obawiając się przede wszystkim zagrożenia ze strony wyładowań atmosferycznych.
+<br><br>
+Prosta chatka składała się zaledwie z dwóch części – izby wyposażonej w stoły i ławy oraz niewielkiej, ciemnej komórki gospodarczej. Rübartsch otrzymał obiekt w wieczystą dzierżawę, a wraz z nim uzyskał pozwolenie na prowadzenie sezonowej, letniej restauracji. Był to kolejny krok w przemianie Orlicy z dzikiego, leśnego szczytu w jedno z najważniejszych miejsc turystycznych Gór Orlickich.
+<br><br>
+Początkowo liczba odwiedzających Orlicę rosła powoli, jednak konsekwentna działalność Rübartscha z czasem zaczęła przynosić wyraźne efekty. Ruch turystyczny szybko zwiększył się na tyle, że już w 1884 roku konieczna stała się rozbudowa niewielkiego schronu. Po modernizacji obiekt zyskał znacznie lepsze warunki dla turystów – znajdowały się w nim dwa pomieszczenia mieszkalne, z których jedno było ogrzewane, kuchnia oraz sień. Osoby, które dotarły na szczyt zbyt późno, mogły liczyć na prosty nocleg na strychu. Przy budynku powstała również drewniana altana chroniąca przed deszczem i niekorzystną pogodą.
+<br><br>
+Sukces Orlicy nie wszystkim jednak przypadł do gustu. Z czasem włodarze duszniccy zaczęli dostrzegać, że przedsięwzięcie, które sami wcześniej zainicjowali, zaczyna żyć własnym życiem. Szczyt przestał być jedynie dodatkową atrakcją mającą urozmaicić pobyt kuracjuszy w Dusznikach – sam stał się celem podróży. Zamiast wspierać rozwój uzdrowiska, Orlica zaczęła być postrzegana jako konkurencja.
+<br><br>
+Dla Rübartscha rozpoczął się trudny okres. Część działaczy z Dusznik podjęła próbę ograniczenia popularności nowej atrakcji, dążąc nawet do likwidacji szlaków prowadzących do Zieleńca i na Orlicę – tych samych, które kilka lat wcześniej sami pomagali wyznakować. Na szczęście zdecydowana reakcja władz centralnych GGV powstrzymała te działania.
+<br><br>
+
+
+<div class="gallery-modular" id="gallery8">
+
+  <img src="https://polska-org.pl/foto/7092/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_7092145.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/7092/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_7092162.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/427/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_427484.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/5404/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_5404003.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/6139/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_6139073.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/281/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_281330.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/8378/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_8378766.jpg" class="thumb-img">
+</div>
+
+<div class="lightbox-modular" id="lightbox8">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery8');
+  const lightbox = document.getElementById('lightbox8');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+
+Problemy nie ograniczały się jednak tylko do sporów organizacyjnych. Ponieważ schron na Orlicy działał jedynie w sezonie letnim, a Rübartsch przez większość roku prowadził również gospodę w Zieleńcu, obiekt pozostawał bez stałego nadzoru. Sytuację tę wykorzystali nieznani sprawcy. W 1885 roku dwukrotnie włamano się do schronu – najpierw kradnąc zgromadzone zapasy żywności, a kilka miesięcy później dokonując znacznie większych zniszczeń. Z budynku wywieziono część wyposażenia, a resztę zdewastowano. Zniszczono między innymi piec, naczynia oraz zapasy jedzenia i napojów.
+<br><br>
+Te przeciwności nie zniechęciły jednak Rübartscha. Wkrótce musiał zmierzyć się z kolejnym wyzwaniem – pierwsza drewniana wieża widokowa, wystawiona na działanie silnych wiatrów i surowego górskiego klimatu, zaczęła się poważnie zużywać. Przewidując jej rychły koniec, już w 1889 roku rozpoczął przygotowania do budowy nowej konstrukcji. Na szczycie ustawił specjalną skarbonkę, do której turyści mogli wrzucać datki na przyszłą inwestycję. Marzył o solidniejszej, bardziej trwałej wieży, jednak realizacja tych planów wydawała się coraz trudniejsza.
+<br><br>
+Sytuację postanowił wykorzystać magistrat Dusznik, który podjął kolejną próbę zahamowania rozwoju Orlicy. Pod wpływem jego nacisków kłodzkie władze powiatowe wydały zakaz budowy nowej wieży na szczycie. Wydawało się, że wieloletni wysiłek Rübartscha może zostać przekreślony. On jednak nie zamierzał się poddać.
+<br><br>
+
+
+<div class="gallery-modular" id="gallery9">
+
+  <img src="https://polska-org.pl/foto/5602/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_5602778.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/6471/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_6471367.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/6471/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_6471633.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox9">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery9');
+  const lightbox = document.getElementById('lightbox9');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+
+Korzystając z własnej determinacji i rozległych kontaktów, nawiązał kontakt z księciem Colloredo-Mansfeldem, właścicielem dóbr położonych po drugiej stronie granicy. Uzyskał od niego zgodę na wzniesienie wieży na terenie należącym wówczas do Austro-Węgier. W ten sposób powstała niezwykła sytuacja, która trwała przez niemal trzy dekady – schronisko znajdowało się po stronie niemieckiej, natomiast wieża stała już na terytorium monarchii austro-węgierskiej.
+<br><br>
+Paradoksalnie sprzeciw władz powiatowych przyczynił się do jeszcze lepszego wyboru lokalizacji. Nowa wieża mogła bowiem stanąć dokładnie w najwyższym punkcie Orlicy, czyli na właściwej kulminacji szczytu, po stronie austro-węgierskiej.
+<br><br>
+Pozbawiony większego wsparcia finansowego Rübartsch ponownie postawił na własne siły. Wzniósł drugą drewnianą wieżę, podobną rozmiarami do poprzedniej. Miała kwadratową podstawę i lekko zwężała się ku górze. Konstrukcja posiadała trzy platformy widokowe, a na najwyższą prowadziły zewnętrzne schody. Całość osiągała wysokość około 13 metrów i przez kolejne lata stanowiła jeden z najważniejszych punktów widokowych Gór Orlickich.
+<br><br>
+
+Książę Colloredo-Mansfeld jeszcze co najmniej raz okazał Rübartschowi swoje wsparcie. Pod koniec lat osiemdziesiątych XIX wieku, podczas podróży do Norwegii, przywiózł kilka par nart, które zamierzał przekazać swoim leśnikom i strażnikom. Jedną z nich podarował opiekunowi Orlicy.
+<br><br>
+Były to narty wykonane z drewna bukowego, o długości około 240 cm, wyposażone w proste rzemienne wiązania. Dla Rübartscha był to zupełnie nowy sposób poruszania się po zimowych górach, jednak szybko opanował technikę jazdy i docenił możliwości, jakie dawał ten wynalazek. Narty stały się dla niego niezwykle praktycznym środkiem transportu, szczególnie że wschodnie zbocza Orlicy przez znaczną część roku pokryte były śniegiem – często utrzymującym się nawet przez ponad pięć miesięcy.
+<br><br>
+Dzięki temu Rübartsch zapisał się nie tylko jako twórca turystycznej infrastruktury na Orlicy, ale również jako jeden z pionierów narciarstwa na ziemi kłodzkiej. Późniejsze opracowania wymieniają go wspólnie z dyrektorem szkoły w Trzebieszowicach, Kargerem, jako jednego z pierwszych propagatorów tego sportu w regionie. Warto więc, aby współcześni narciarze odwiedzający Zieleniec pamiętali, że to właśnie tutaj, na stokach Gór Orlickich, ponad sto lat temu pojawiły się pierwsze ślady nart pozostawione przez człowieka, który całe swoje życie związał z tymi górami.
+<br><br>
+Rosnąca popularność Orlicy sprawiła jednak, że niewielki schron z końca XIX wieku przestał wystarczać. Na początku XX wieku Rübartsch zdecydował się więc wznieść w jego pobliżu znacznie większy i bardziej komfortowy obiekt. Nowe schronisko było solidnym, parterowym budynkiem z podpiwniczeniem oraz przestronnym poddaszem, dostosowanym do coraz większej liczby turystów odwiedzających szczyt. Wg prof. Jacka Suchodolskiego posiadał on 25 miejsc noclegowych (<a href="https://margom23.github.io/przewodnik/zdjecia/7_pl-1.pdf" target="_blank">"Zapomniane schroniska Ziemi Kłodzkiej. O architekturze inspirowanej miejscową tradycją budowlaną"</a>; [w:] Budownictwo i Architektura 20(3) 2021, ss. 119-133). 
+<br><br>
+J. Suchodolski pisze:
+
+<blockquote style="margin-left: 20px; font-style: italic; color: #fff;">
+Hohe Mense-Baude (1084 m n.p.m.), wzniesiono stopniowo, dzięki staraniom jego właściciela Heinricha Rübartscha, tuż poniżej szczytu Orlicy, przy granicy austriacko-pruskiej. Charakteryzowało się prostą formą, a w jego skład wchodziły dwa budynki o konstrukcji zrębowo-murowanej, przekryte stromymi, dwuspadkowymi dachami, ze stojącą obok wieżą widokową o drewnianej konstrukcji. Zapewniały one turystom wypoczynek i nocleg dla dziesięciu osób w pokojach i 25 miejsc w pomieszczeniu zbiorowym. Głównym atutem tego miejsca, jak się wydaje, była otaczająca przyroda oraz cisza i spokój, co tak cenił sobie, zwłaszcza pod koniec życia, Heinrich Rübartsch.
+
+</blockquote>
+<br><br>
+
+
+
+<div class="gallery-modular" id="gallery12">
+
+  <img src="https://polska-org.pl/foto/7476/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_7476850.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/10306/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_10306356.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/6362/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_6362960.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/6821/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_6821480.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/6875/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_6875350.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/4122/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_4122185.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/7784/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_7784630.jpg" class="thumb-img">
+</div>
+
+<div class="lightbox-modular" id="lightbox12">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery12');
+  const lightbox = document.getElementById('lightbox12');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+W 1903 roku Rübartsch podjął jedną z najważniejszych decyzji w swoim życiu – zrezygnował z prowadzenia działalności w dwóch miejscach jednocześnie i sprzedał rodzinną gospodę w Zieleńcu swojemu bratankowi, synowi poprzedniego właściciela. Od tej chwili na stałe zamieszkał w schronisku na Orlicy. Oznaczało to faktyczną przemianę obiektu z sezonowego punktu noclegowego w całoroczne schronisko górskie.
+<br><br>
+Początkowo decyzja ta mogła wydawać się zbyt odważna. Poza letnim sezonem ruch turystyczny wciąż był niewielki, a samotność gospodarza dodatkowo pogłębiła śmierć żony. Zimowe miesiące Rübartsch spędzał niemal jak pustelnik – w surowych warunkach wysokogórskich, oczekując na nielicznych gości i tylko sporadycznie schodząc do zamieszkałych dolin.
+<br><br>
+Po zakończeniu I wojny światowej sytuacja na Orlicy uległa gwałtownej zmianie. Dotychczasowy układ, oparty na współpracy i porozumieniu ponad granicami, został zachwiany przez nowe realia polityczne. Odrodzona Czechosłowacja rozpoczęła usuwanie niemieckich wpływów z terenów, które znalazły się w jej granicach. W przypadku wieży widokowej na Orlicy sprawa była szczególnie łatwa do uzasadnienia – obiekt należał do niemieckiej organizacji turystycznej i dodatkowo stanowił konkurencję dla planowanego czeskiego schroniska na pobliskim Šerlichu (Masarykova Chata), którego budowę ukończono w 1925 roku.
+<br><br>
+Nie pomogło nawet czeskie pochodzenie samego Rübartscha. Najpierw czescy legioniści zamknęli wieżę, a następnie – najprawdopodobniej w 1919 roku – przewrócili ją. Niemal siedemdziesięcioletni wówczas gospodarz Orlicy po raz kolejny udowodnił jednak swój niezwykły upór. W miejscu zniszczonej konstrukcji zdecydował się wznieść kolejną wieżę widokową. Nowy obiekt został oddany do użytku w 1922 roku i był bardzo podobny do swojej poprzedniczki – wykonany z drewna, o zbliżonej wysokości i utrzymany w podobnym stylu. Pod względem wykonania ustępował jednak wcześniejszej budowli.
+<br><br>
+
+
+<div class="gallery-modular" id="gallery10">
+
+  <img src="https://polska-org.pl/foto/4727/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_4727393.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/9103/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_9103932.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/4600/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_4600978.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/4931/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_4931164.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/6636/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_6636858.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/4353/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_4353565.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/3694/Folder_reklamowy_Landesfremdenverkersverband_Schlesien_Karpacz_3694186.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/9618/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_9618627.jpg" class="thumb-img">
+</div>
+
+<div class="lightbox-modular" id="lightbox10">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery10');
+  const lightbox = document.getElementById('lightbox10');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+
+Tymczasem Orlica i okolice zaczęły przeżywać kolejny etap rozwoju. Coraz większą popularność zdobywały sporty zimowe, a dotychczas opustoszałe zimą okolice Zieleńca i szczytu zaczęły przyciągać coraz więcej narciarzy i turystów. W latach dwudziestych XX wieku liczba zimowych odwiedzin w schronisku Rübartscha dorównała letniemu ruchowi, a z czasem zaczęła go nawet przewyższać.
+<br><br>
+Rosnąca popularność góry sprawiła, że dotychczasowe schronisko ponownie okazało się zbyt małe. Rübartsch planował jego rozbudowę, a nawet zgromadził już odpowiedni zapas drewna potrzebnego do rozpoczęcia prac. Wciąż jednak musiał funkcjonować na terenie, którego formalnie nie był właścicielem.
+<br><br>
+Przełom nastąpił dopiero w 1929 roku. Po wielu latach starań Rübartsch otrzymał możliwość wykupienia użytkowanego dotąd terenu. Po niemal pięćdziesięciu latach pracy na Orlicy mógł wreszcie powiedzieć, że miejsce, któremu poświęcił całe swoje życie, stało się naprawdę jego własnością. Była to symboliczna nagroda za dekady wytrwałości, dzięki której samotny leśny szczyt stał się jednym z najważniejszych punktów turystycznych Gór Orlickich.
+<br><br><div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+
+Niezrealizowany projekt murowanej wieży widokowej na Orlicy z lat 20. XX w.:
+
+<div class="gallery-modular" id="gallery20">
+
+  <img src="https://polska-org.pl/foto/5978/Orlica_1084_m_Duszniki_Zdroj_5978585.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox20">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery20');
+  const lightbox = document.getElementById('lightbox20');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+
+
+
+
+Nawet najpiękniejsze i najbardziej niezwykłe życie ma swój kres. Henryk Rübartsch – człowiek, któremu Zieleniec i Orlica zawdzięczają swój turystyczny rozwój – zmarł 29 marca 1930 roku, po trwającym trzy dni zapaleniu płuc. Miał 78 lat.
+<br><br>
+Swoją wieloletnią działalnością zdobył ogromne uznanie po obu stronach granicy. Był postacią doskonale znaną nie tylko na ziemi kłodzkiej, ale również w całych środkowych i wschodnich Niemczech, skąd przybywała większość gości odwiedzających miejscowe uzdrowiska. Jego charakterystyczna, potężna sylwetka, zwieńczona długą brodą, sprawiła, że zyskał niezwykle zaszczytny przydomek „Kłodzki Rübezahl” lub „Rübezahl z Orlicy” – nawiązujący do legendarnego karkonoskiego Ducha Gór (niem. Rübezahl, pol. Liczyrzepa).
+<br><br>
+O tym, jak bardzo był ceniony i jak blisko związany był z ludźmi odwiedzającymi jego schronisko, świadczy jeszcze jeden przydomek, którym powszechnie go określano – „Vater Rübartsch”, czyli „Ojciec Rübartsch”. Nie był dla turystów jedynie gospodarzem schroniska, lecz prawdziwym symbolem Orlicy i jej górskiego ducha.
+<br><br>
+
+
+<div class="gallery-modular" id="gallery11">
+
+  <img src="https://polska-org.pl/foto/5562/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_5562329.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/416/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_416291.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/10505/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_10505453.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/4058/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_4058679.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/268/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_268302.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/3416/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_3416728.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/271/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_271552.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/3551/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_3551150.jpg" class="thumb-img">
+</div>
+
+<div class="lightbox-modular" id="lightbox11">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery11');
+  const lightbox = document.getElementById('lightbox11');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+
+
+Jego osobowość doskonale uzupełniała dzieło, które stworzył. Rübartsch był znakomitym gawędziarzem, człowiekiem obdarzonym wyjątkowym poczuciem humoru i ogromną ciekawością świata. Dużo czytał, a swoją rozległą wiedzą często zaskakiwał odwiedzających go gości. Szczególną sympatią darzył ludzi znajdujących się w trudniejszej sytuacji – nigdy nie odmawiał pomocy potrzebującym, a szczególnie chętnie wspierał wędrujących rzemieślników, przypominających mu własną młodość.
+<br><br>
+Śmierć „Starego z gór”, jak również go nazywano, wywołała duże poruszenie wśród mieszkańców regionu i turystów. Przez dziesięciolecia wszyscy przywykli do jego obecności na szczycie Orlicy, a jego postać stała się nierozerwalnie związana z tym miejscem. Okolicznościowy artykuł poświęcony jego pamięci w czasopiśmie „Die Grafschaft Glatz”, wydawanym przez Kłodzkie Towarzystwo Górskie, kończył się wymownymi słowami: „Rübezahl nie żyje”.
+<br><br>
+Za J. Suchodolskim:
+
+<blockquote style="margin-left: 20px; font-style: italic; color: #fff;">
+
+Heinrich Rübartsch, prekursor narciarstwa w Zieleńcu, współtwórca rozwoju i jego znaczenia w Sudetach jako ośrodka turystycznego. Odchodząc w 1930 roku ze świata żywych pozostawił po sobie jeszcze rzecz równie cenną, wspomnienie jako o osobie nieodmawiającej nikomu pomocy nieraz w ekstremalnych górskich warunkach.</blockquote>
+<br><br>
+
+Niestety, materialne ślady działalności Rübartscha nie przetrwały długo. Schronisko i wieża widokowa na Orlicy służyły turystom jeszcze w latach trzydziestych XX wieku oraz na początku II wojny światowej, kiedy obiektem opiekował się wnuk Rübartscha (najprawdopodobniej Max Rübartsch, którego księga adresowa z roku 1937 wymienia jako 'Baudenbesitzer' - właściciela schroniska). Nie prowadzono jednak już większych inwestycji ani modernizacji. Dostęp do szczytu ułatwiło wprawdzie wybudowanie Drogi Orlickiej, ale pojawiła się również konkurencja – między innymi nowe schronisko Hindenburgbaude, otwarte przez Kłodzkie Towarzystwo Górskie w 1928 roku u podnóża Orlicy.
+<br><br>
+
+
+<div class="gallery-modular" id="gallery22">
+
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/Zrzut%20ekranu%202026-08-01%20005801.png" class="thumb-img">
+</div>
+
+<div class="lightbox-modular" id="lightbox22">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery22');
+  const lightbox = document.getElementById('lightbox22');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+Pod koniec wojny schronisko na szczycie zostało opuszczone. Podobnie jak wiele innych górskich obiektów w Sudetach, nie przetrwało niespokojnych lat powojennych. Położenie w rejonie nowej, nie do końca ustabilizowanej granicy, dodatkowo obciążone napiętą sytuacją polityczną i działalnością niemieckiego podziemia, sprawiło, że budynek stał się łatwym celem. Najczęściej podawana wersja mówi, że schronisko spłonęło doszczętnie w 1946 roku.
+<br><br>
+Istnieją jednak pewne wątpliwości co do dokładnej daty jego zniszczenia. Na czeskich zdjęciach ortofotograficznych z 1953 roku widoczny jest jeszcze obiekt w miejscu dawnej Hohe Mense-Baude – z zachowanym dachem i bryłą budynku, która wydaje się stosunkowo dobrze utrzymana. Może to sugerować, że schronisko przetrwało nieco dłużej, niż wskazują popularne opracowania, a jego ostateczny koniec nastąpił dopiero kilka lat po wojnie.
+<br><br>
+
+<div class="gallery-modular" id="gallery25">
+
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Dusznikcccc_Zdroj_5575728.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox25">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery25');
+  const lightbox = document.getElementById('lightbox25');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+Nieznane pozostają również szczegóły dotyczące powojennego losu wieży widokowej. Wiadomo jedynie, że nie przetrwała ona wiele dłużej niż schronisko. Wraz z ich zniknięciem zakończyła się pewna epoka w historii Orlicy – epoka, której symbolem na zawsze pozostał Henryk Rübartsch, człowiek, który z samotnego, zalesionego szczytu stworzył jedno z najważniejszych miejsc turystycznych Gór Orlickich.
+<br><br>
+Po zniknięciu schroniska i ostatniej wieży widokowej w pierwszych powojennych dekadach Orlica na wiele lat utraciła swój najważniejszy atut – możliwość podziwiania rozległej panoramy z przygotowanego do tego celu punktu widokowego. Przez niemal siedemdziesiąt lat, od połowy XX wieku, na najwyższym szczycie polskiej części Gór Orlickich nie istniał żaden obiekt, który pozwalałby turystom spojrzeć ponad lasami i w pełni docenić wyjątkowe położenie tego miejsca.
+<br><br>
+
+<div class="gallery-modular" id="gallery13">
+
+  <img src="https://polska-org.pl/foto/9071/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_9071409.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/9071/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_9071410.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox13">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery13');
+  const lightbox = document.getElementById('lightbox13');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+Dopiero w 2020 roku na Orlicy rozpoczął się nowy rozdział w historii tego niezwykłego szczytu. W miejscu dawnej wieży Heinricha Rübartscha stanęła nowoczesna, drewniana wieża widokowa, będąca symbolicznym nawiązaniem do ponadstuletniej tradycji turystycznej góry. Nowa konstrukcja ma 25,5 m wysokości i wyposażona jest w trzy platformy widokowe znajdujące się na poziomach 8,75 m, 13,65 m oraz 18,55 m. Z każdego z tarasów można ponownie podziwiać rozległą panoramę Sudetów – od najbliższych grzbietów Gór Orlickich i Bystrzyckich, przez Masyw Śnieżnika, aż po odległe pasma z dominującą nad całym krajobrazem Śnieżką, najwyższym szczytem Sudetów.
+<br><br>
+Wieża nie jest jedynie punktem obserwacyjnym, ale również miejscem przypominającym o bogatej historii Orlicy. Na klatce schodowej prowadzącej na kolejne poziomy umieszczono archiwalne fotografie przedstawiające dawne zabudowania na szczycie – między innymi wcześniejsze wieże widokowe oraz schronisko Heinricha Rübartscha. Dzięki temu wejście na platformę widokową staje się jednocześnie podróżą przez dzieje tego miejsca i przypomnieniem o ludziach, którzy przed ponad stu laty tworzyli tutaj początki turystyki górskiej.
+<br><br>
+U podstawy wieży przygotowano zadaszone miejsce odpoczynku z ławami i stołami, dzięki czemu obiekt stał się nie tylko punktem widokowym, ale również przyjaznym miejscem zatrzymania dla osób przemierzających górskie szlaki. Dostęp do wieży zapewniają znakowane trasy turystyczne – czerwony i zielony szlak prowadzące drogą gruntową na szczyt.
+<br><br>
+
+
+<div class="gallery-modular" id="gallery14">
+
+  <img src="https://polska-org.pl/foto/9071/Wieza_widokowa_na_Orlicy_Duszniki_Zdroj_9071945.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/9392/Wieza_widokowa_na_Orlicy_Duszniki_Zdroj_9392360.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/9392/Wieza_widokowa_na_Orlicy_Duszniki_Zdroj_9392359.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/9392/Wieza_widokowa_na_Orlicy_Duszniki_Zdroj_9392361.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/9392/Wieza_widokowa_na_Orlicy_Duszniki_Zdroj_9392364.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox14">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery14');
+  const lightbox = document.getElementById('lightbox14');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+
+Nowa wieża powstała w ramach polsko-czeskiego projektu „Czesko-Polski Szlak Grzbietowy – część wschodnia”, którego celem jest przywracanie i rozwijanie tradycji punktów widokowych w Sudetach. Projekt zakładał budowę jedenastu wież, zarówno w miejscach dawnych, nieistniejących już konstrukcji, jak i w nowych lokalizacjach. Wieża na Orlicy jest jednym z przykładów świadomego odtwarzania górskiego dziedzictwa – nie jako kopii dawnej budowli, lecz jako współczesnej kontynuacji idei, która przyświecała pionierom turystyki sprzed ponad stu lat.
+<br><br>
+
+
+
+
+
+<div class="gallery-modular" id="gallery15">
+
+  <img src="https://polska-org.pl/foto/9093/Widoki_z_wiezy_na_Orlicy_Duszniki_Zdroj_9093133.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/9029/Wyciag_talerzykowy_Patyczak_N5_Duszniki_Zdroj_9029933.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/9803/Velka_Destna_1115_m_CZ_9803178.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/9795/Widoki_z_wiezy_na_Orlicy_Duszniki_Zdroj_9795367.jpg" class="thumb-img">
+ 
+</div>
+
+<div class="lightbox-modular" id="lightbox15">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery15');
+  const lightbox = document.getElementById('lightbox15');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+<br>
+<br>
+<br>
+<br>
+
+<strong>
+
+
+Można przypuszczać, że gdyby Henryk Rübartsch mógł dziś stanąć na szczycie Orlicy, z satysfakcją zobaczyłby, że jego dzieło nie zostało zapomniane. Tak jak on niegdyś walczył o udostępnienie tego miejsca ludziom, tak współczesna wieża ponownie otworzyła przed turystami widok, który przed laty zachwycił jego samego – i stała się kolejnym rozdziałem historii góry, której poświęcił całe swoje życie.
+
+
+
+
+</strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+    </div>
+
+<br><br><br>
+   <p style="font-size: 12px;"> Wszystkie fotografie i inne multimedia wykorzystane w niniejszym przewodniku pochodzą z ogólnodostępnych źródeł, w szczególności polska.org.pl, dbc.wroc.pl, sbc.org.pl oraz inncyh źródeł wskazanych bezpośrednio w treści strony.
+
+<br>Materiały te zostały wykorzystane wyłącznie w celach krajoznawczych, edukacyjnych oraz popularyzatorskich, służących szerzeniu wiedzy o regionie Ziemi Kłodzkiej. Strona nie ma charakteru komercyjnego, a jej autor nie czerpie żadnych korzyści majątkowych z publikacji ww. treści.
+
+<br>Wszelkie prawa autorskie do wykorzystanych materiałów należą do ich pierwotnych właścicieli. W przypadku jakichkolwiek wątpliwości lub zastrzeżeń prosimy o kontakt w celu niezwłocznego wyjaśnienia sprawy lub usunięcia wskazanych treści.
+
+</p>
+</div>
+
+<script>
+function openContent(id, btn) {
+    let contents = document.getElementsByClassName("content");
+    for (let i = 0; i < contents.length; i++) {
+        contents[i].style.display = "none";
+    }
+
+    let buttons = document.getElementsByClassName("accordion");
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove("active");
+    }
+
+    document.getElementById(id).style.display = "block";
+    btn.classList.add("active");
+}
+</script>
+</body>
+</html>
