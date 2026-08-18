@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Proste piłkarskie łamigłówki i wykreślanki dla fanów piłki nożnej.">
+
+    <title>Piłkarskie łamigłówki</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+
+            /* TŁO */
+            background-image:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.78),
+                    rgba(0, 0, 0, 0.78)
+                ),
+                url("https://media.posterstore.com/site_images/685afafc01a18ab3773ec562_265476598_13533-5.jpg?auto=compress%2Cformat&fit=max&w=3840");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        /* GŁÓWNY KONTENER */
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 30px 20px 70px;
+        }
+
+        /* NAGŁÓWEK */
+        header {
+            text-align: center;
+            padding: 25px 20px 35px;
+        }
+
+        .copyright {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 48px;
+            height: 48px;
+
+            border: 2px solid white;
+            border-radius: 50%;
+
+            font-size: 22px;
+            font-weight: bold;
+
+            margin-bottom: 12px;
+
+            background: rgba(0, 0, 0, 0.35);
+        }
+
+        header h1 {
+            font-size: clamp(32px, 6vw, 60px);
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            text-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .author {
+            font-size: 18px;
+            color: #dddddd;
+            margin-bottom: 25px;
+        }
+
+        .description {
+            max-width: 750px;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 1.7;
+            color: #f0f0f0;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        /* SEKCJA Z ŁAMIGŁÓWKAMI */
+        .puzzles {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .puzzles h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        /* POJEDYNCZE ZDJĘCIE */
+        .puzzle {
+            width: 100%;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .puzzle img {
+            display: block;
+            width: 30%;
+            max-width: 900px;
+            height: auto;
+
+            margin: 0 auto;
+
+            border-radius: 12px;
+            cursor: pointer;
+
+            border: 2px solid rgba(255, 255, 255, 0.5);
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.7);
+
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+        .puzzle img:hover {
+            transform: scale(1.015);
+
+            box-shadow:
+                0 15px 40px rgba(0, 0, 0, 0.9);
+        }
+
+        /* PODPIS POD ZDJĘCIEM - OPCJONALNY */
+        .puzzle-title {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #dddddd;
+        }
+
+        /* OKNO PEŁNOEKRANOWE */
+        .lightbox {
+            display: none;
+
+            position: fixed;
+            z-index: 9999;
+
+            left: 0;
+            top: 0;
+
+            width: 100%;
+            height: 100%;
+
+            background: rgba(0, 0, 0, 0.95);
+
+            align-items: center;
+            justify-content: center;
+
+            padding: 20px;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 100%;
+            max-height: 100%;
+
+            width: auto;
+            height: auto;
+
+            object-fit: contain;
+
+            border-radius: 5px;
+
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
+        }
+
+        /* PRZYCISK ZAMKNIĘCIA */
+        .close {
+            position: absolute;
+
+            top: 15px;
+            right: 25px;
+
+            width: 50px;
+            height: 50px;
+
+            border: none;
+            border-radius: 50%;
+
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+
+            font-size: 35px;
+            line-height: 45px;
+
+            cursor: pointer;
+
+            transition: background 0.2s ease;
+        }
+
+        .close:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* STOPKA */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 25px;
+
+            border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+            color: #cccccc;
+            font-size: 14px;
+        }
+
+        /* TELEFONY */
+        @media (max-width: 600px) {
+
+            .container {
+                padding: 15px 12px 50px;
+            }
+
+            header {
+                padding: 20px 10px 30px;
+            }
+
+            header h1 {
+                font-size: 35px;
+            }
+
+            .description {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+
+            .puzzles h2 {
+                font-size: 25px;
+            }
+
+            .puzzle img {
+                border-radius: 8px;
+            }
+
+            .lightbox {
+                padding: 5px;
+            }
+
+            .close {
+                top: 10px;
+                right: 10px;
+            }
+        }
+
+
+    </style>
+
+
+<link rel="icon" href="https://png.pngtree.com/png-clipart/20201110/ourmid/pngtree-hand-drawn-football-logo-png-image_2413701.jpg">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- =========================
+             NAGŁÓWEK STRONY
+        ========================== -->
+
+        <header>
+
+          
+            <h1>Piłkarskie łamigłówki</h1>
+
+            <p class="description">
+            Uwielbiasz piłkę nożną? ⚽<br>
+
+Dobrze znasz piłkarski świat i oglądasz wszystkie mecze? 😎 <br>W takim razie jesteś w dobrym miejscu! Czekają tutaj na Ciebie wciągające piłkarskie wykreślanki. Sprawdź swoją wiedzę, spostrzegawczość i przekonaj się, ile piłkarskich haseł uda Ci się odnaleźć! 🏆
+
+
+
+<br><br> W wykreślankach szukaj haseł zapisanych w pionie, w poziomie oraz na skos.
+            </p>
+
+        </header>
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+
+
+        <!-- =========================
+             Gotowi na wyzwanie? Zaczynamy!
+        ========================== -->
+
+        <main class="puzzles">
+
+            <h2> Zaczynamy!</h2>
+
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div><br>
+
+            <!--
+                ==========================================
+                ZDJĘCIE 1
+                ==========================================
+
+                Tutaj możesz zmienić adres zdjęcia.
+
+                Wystarczy zmienić zawartość:
+                src="TUTAJ_LINK_DO_ZDJĘCIA"
+
+                i wkleić link do swojej grafiki.
+            -->
+
+
+ <p style="text-align: center;">
+
+Na początek największe gwiazdy światowej piłki. W poniższym diagramie znajdź nazwiska 12 gwiazd: <br><br>
+
+MESSI, RONALDO, LEWANDOWSKI, NEYMAR, MBAPPE, HAALAND, SALAH, ZIDANE, INIESTA, MODRIĆ, BENZEMA, SUAREZ
+</p>
+
+<br><br>
+
+
+            <div class="puzzle">
+
+                <img
+                    src="https://raw.githubusercontent.com/margom23/wykreslanki/refs/heads/main/zdjecia/Zrzut%20ekranu%202026-08-18%20202907.png"
+                    alt="Piłkarska wykreślanka"
+                    onclick="openLightbox(this)"
+                >
+
+            </div>
+
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div><br>
+
+            <!--
+                ==========================================
+                ZDJĘCIE 2
+                ==========================================
+
+                SKOPIUJ TEN BLOK, gdy będziesz chciał
+                dodać kolejną łamigłówkę.
+            -->
+
+
+ <p style="text-align: center;">
+
+Teraz aktualni mistrzowie świata. W poniższym diagramie znajdź nazwiska 12 Hiszpanów, którzy zdobyli Puchar Świata 2026: <br><br>
+RODRI, CARVAJAL, LAPORTE, CUCURELLA, ZUBIMENDI, PEDRI, RUIZ, MERINO, OYARZABAL, YAMAL, TORRES, OLMO
+</p>
+
+<br><br>
+
+
+
+            <div class="puzzle">
+
+                <img
+                    src="https://raw.githubusercontent.com/margom23/wykreslanki/refs/heads/main/zdjecia/Zrzut%20ekranu%202026-08-18%20202746.png"
+                    alt="Piłkarska łamigłówka"
+                    onclick="openLightbox(this)"
+                >
+
+            </div>
+
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div><br>
+
+            <!--
+                ==========================================
+                ZDJĘCIE 3
+                ==========================================
+            -->
+
+ <p style="text-align: center;">
+
+
+Reprezentanci Polski. W poniższym diagramie znajdź nazwiska 12 aktualnych reprezentantów naszego kraju: <br><br>
+
+LEWANDOWSKI, ZIELIŃSKI, KIWIOR, BEDNAREK, SZYMAŃSKI, ZALEWSKI, CASH, GRABARA, BUŁKA, KAMIŃSKI, PIĄTEK, ZIÓŁKOWSKI
+</p>
+
+<br><br>
+
+
+
+            <div class="puzzle">
+
+                <img
+                    src="https://raw.githubusercontent.com/margom23/wykreslanki/refs/heads/main/zdjecia/Zrzut%20ekranu%202026-08-18%20202321.png"
+                    alt="Piłkarska łamigłówka"
+                    onclick="openLightbox(this)"
+                >
+
+            </div>
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div><br>
+
+
+            <!--
+                ==========================================
+                ZDJĘCIE 4
+                ==========================================
+            -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <p style="text-align: center;">
+
+
+Teraz znajdź nazwy wszytkich krajów, które zdobyły mistrzostwo świata (8 państw). Żeby było trudniej - nie podam Ci ich, ale na pewno przypomnisz sobie ich wszystkich.
+</p>
+
+<br><br>
+
+
+
+            <div class="puzzle">
+
+                <img
+                    src="https://raw.githubusercontent.com/margom23/wykreslanki/refs/heads/main/zdjecia/Zrzut%20ekranu%202026-08-18%20201124.png"
+                    alt="Piłkarska łamigłówka"
+                    onclick="openLightbox(this)"
+                >
+
+            </div>
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div><br>
+
+         
+
+
+
+
+
+
+
+
+
+
+
+
+ <p style="text-align: center;">
+Odszukaj nazwy 12 klubów, które zdobyły mistrzostwo Polski. Tak, było ich więcej niż, ale w poniższym diagramie szukaj jedynie takich klubów jak:<br><br>
+LEGIA, RUCH, GÓRNIK, WISŁA, LECH, WIDZEW, ŚLĄSK, ZAGŁĘBIE, POLONIA, JAGIELLONIA, RAKÓW, CRACOVIA
+</p>
+<br><br>
+            <div class="puzzle">
+
+                <img
+                    src="https://raw.githubusercontent.com/margom23/wykreslanki/refs/heads/main/zdjecia/Zrzut%20ekranu%202026-08-18%20201700.png"
+                    alt="Piłkarska łamigłówka"
+                    onclick="openLightbox(this)"
+                >
+
+            </div>
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div><br>
+
+         
+
+
+
+
+
+
+
+
+
+
+ <p style="text-align: center;">
+Przed Tobą 12 wielkich, europejskich marek:<br><br>REAL, BARCELONA, LIVERPOOL, BAYERN, ARSENAL, JUVENTUS, MILAN, INTER, CHELSEA, PSG, AJAX, BENFICA
+</p>
+<br><br>
+            <div class="puzzle">
+
+                <img
+                    src="https://raw.githubusercontent.com/margom23/wykreslanki/refs/heads/main/zdjecia/Zrzut%20ekranu%202026-08-18%20203242.png"
+                    alt="Piłkarska łamigłówka"
+                    onclick="openLightbox(this)"
+                >
+
+            </div>
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div><br>
+
+
+
+
+
+
+
+
+
+ <p style="text-align: center;">
+Znajdź w diagramie 15 nazwisk wielkich Brazylijczyków:<br><br>PELE, 
+GARRINCHA, 
+RONALDO, 
+DIDA
+ROMARIO, 
+RONALDINHO, 
+ZICO, 
+NEYMAR, 
+RIVALDO, 
+KAKA, 
+CARLOS, 
+CAFU, 
+JAIRZINHO, 
+BEBETO, 
+VINICIUS
+
+
+</p>
+<br><br>
+            <div class="puzzle">
+
+                <img
+                    src="https://raw.githubusercontent.com/margom23/wykreslanki/refs/heads/main/zdjecia/Zrzut%20ekranu%202026-08-18%20203702.png"
+                    alt="Piłkarska łamigłówka"
+                    onclick="openLightbox(this)"
+                >
+
+            </div>
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div><br>
+
+
+
+
+
+
+
+
+
+
+ <p style="text-align: center;">
+Teraz trzeba będzie pogrzebać w pamięci. 12 nazwisk ze słynnej kadry Górskiego z 1974 r.:<br><br>LATO, 
+DEYNA, 
+GADOCHA, 
+SZARMACH, 
+TOMASZEWSKI, 
+GORGOŃ, 
+ŻMUDA,
+MUSIAŁ, 
+SZYMANOWSKI,
+ KASPERCZAK,
+ MASZCZYK, 
+ĆMIKIEWICZ
+</p>
+<br><br>
+            <div class="puzzle">
+
+                <img
+                    src="https://raw.githubusercontent.com/margom23/wykreslanki/refs/heads/main/zdjecia/Zrzut%20ekranu%202026-08-18%20204033.png"
+                    alt="Piłkarska łamigłówka"
+                    onclick="openLightbox(this)"
+                >
+
+            </div>
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div><br>
+
+
+
+
+
+
+
+ <p style="text-align: center;">
+Znajdź w diagramie 12 wielkich klubów z Półwyspu Apenińskiego - legendy Serie A:
+<br><br>
+JUVENTUS, 
+MILAN, 
+INTER,
+ ROMA, 
+LAZIO, 
+NAPOLI, 
+ATALANTA, 
+FIORENTINA, 
+BOLOGNA, 
+TORINO, 
+GENOA, 
+SAMPDORIA
+</p>
+<br><br>
+            <div class="puzzle">
+
+                <img
+                    src="https://raw.githubusercontent.com/margom23/wykreslanki/refs/heads/main/zdjecia/Zrzut%20ekranu%202026-08-18%20204525.png"
+                    alt="Piłkarska łamigłówka"
+                    onclick="openLightbox(this)"
+                >
+
+            </div>
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </main>
+
+
+        <!-- =========================
+             STOPKA
+        ========================== -->
+
+        <footer>
+            © Marcel Goman
+        </footer>
+
+    </div>
+
+
+    <!-- =========================
+         PEŁNY EKRAN ZDJĘCIA
+    ========================== -->
+
+    <div
+        class="lightbox"
+        id="lightbox"
+        onclick="closeLightbox(event)"
+    >
+
+        <button
+            class="close"
+            onclick="closeLightbox()"
+            aria-label="Zamknij"
+        >
+            &times;
+        </button>
+
+        <img
+            id="lightboxImage"
+            src=""
+            alt="Powiększona łamigłówka"
+        >
+
+    </div>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        function openLightbox(image) {
+
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImage = document.getElementById("lightboxImage");
+
+            lightboxImage.src = image.src;
+            lightboxImage.alt = image.alt;
+
+            lightbox.classList.add("active");
+
+            // Blokujemy przewijanie strony
+            document.body.style.overflow = "hidden";
+        }
+
+
+        function closeLightbox(event) {
+
+            // Jeżeli kliknięto bezpośrednio w zdjęcie,
+            // nie zamykamy okna.
+            if (
+                event &&
+                event.target &&
+                event.target.id === "lightboxImage"
+            ) {
+                return;
+            }
+
+            const lightbox = document.getElementById("lightbox");
+
+            lightbox.classList.remove("active");
+
+            // Przywracamy przewijanie strony
+            document.body.style.overflow = "";
+        }
+
+
+        // Zamknięcie zdjęcia klawiszem ESC
+        document.addEventListener("keydown", function(event) {
+
+            if (event.key === "Escape") {
+                closeLightbox();
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>
